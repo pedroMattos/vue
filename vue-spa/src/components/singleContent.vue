@@ -1,17 +1,15 @@
 <template>
     <div id="main">
-        <div id="main">
-            <div id="header">
-                <div id="img">
-                    <img :src="url_img" :alt="title">
-                </div>
-                <div class="center" id="title">
-                    <h3>{{ title }}</h3>
-                </div>
+        <div id="header-single">
+            <div id="img">
+                <img :src="url_img" :alt="title">
             </div>
-            <div id="content">
-
+            <div class="container" id="title">
+                <h1 class="left">{{ title }}</h1>
             </div>
+        </div>
+        <div class="container" id="content">
+            <p>{{ desc }}</p>
         </div>
     </div>
 </template>
@@ -67,7 +65,27 @@ export default {
 </script>
 
 <style>
-    #header #title {
-        color: black;
+    #header-single #title {
+        color: white;
+        font-style: italic;
+    }
+    #header-single #title h1 {
+        font-size: 30px;
+    }
+    #header-single img {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: -93px;
+        filter: brightness(0.5);
+        z-index: -3;
+        object-fit: cover;
+        object-position: top;
+    }
+    #header-single #img {
+        position: relative;
+    }
+    #header-single {
+        height: 300px;
     }
 </style>
