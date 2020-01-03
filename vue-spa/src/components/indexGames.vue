@@ -1,20 +1,19 @@
 <template>
     <div id="main">
-        <banner/>
-        <cards/>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-import cards from './Cards'
 import banner from './banner-internal'
 import single from './singleContent'
+import games from './Games'
 export default {
-    name: 'games-page',
+    name: 'indexGames',
     components: {
-        cards,
         banner,
         single,
+        games,
     },
     data() {
         return {

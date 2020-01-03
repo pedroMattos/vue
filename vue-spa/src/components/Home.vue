@@ -22,8 +22,8 @@ export default {
         return {
             image: [
                 {
-                    url: 'https://img.olhardigital.com.br/uploads/acervo_imagens/2018/06/r16x9/20180622155150_1200_675_-_dishonored.jpg',
-                    alt: 'image banner',
+                  url: 'https://img.olhardigital.com.br/uploads/acervo_imagens/2018/06/r16x9/20180622155150_1200_675_-_dishonored.jpg',
+                  alt: 'image banner',
                 }
             ],
             title: 'See our Games',
