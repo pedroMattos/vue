@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Games from '@/components/Games'
 import singleContent from '@/components/singleContent'
 import indexGames from '@/components/indexGames'
+import indexFilms from '@/components/indexFilms'
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ export default new Router({
         component: singleContent,
       }
       ]
+    },
+    {
+      path: '/filmes',
+      name: 'filmes',
+      component: indexFilms,
     }
   ]
 })
