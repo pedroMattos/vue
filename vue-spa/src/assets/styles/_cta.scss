@@ -1,0 +1,10 @@
+.btn-cta {
+    background-color: orangered;
+    border-radius: 20px;
+    border: .5px solid grey;
+    transition-duration: .5s;
+    &:hover {
+        background-color: transparent;
+        transition-duration: .5s;
+    }
+}
