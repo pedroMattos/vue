@@ -8,13 +8,11 @@
 <script>
 import cards from './Cards'
 import banner from './banner-internal'
-import single from './singleContent'
 export default {
     name: 'games-page',
     components: {
         cards,
         banner,
-        single,
     },
     data() {
         return {
