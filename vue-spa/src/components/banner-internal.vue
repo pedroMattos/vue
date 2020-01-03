@@ -16,7 +16,7 @@ export default {
         return {
             title: 'Our games is the best',
             image: [
-                {url: 'https://firebasestorage.googleapis.com/v0/b/ccm-mobile-c3339.appspot.com/o/teso-2-620x387.jpg?alt=media&token=86ab3a72-fcf5-4069-adc7-10f2968778ba', 
+                {url: 'https://firebasestorage.googleapis.com/v0/b/ccm-mobile-c3339.appspot.com/o/filmes-banner.jpg?alt=media&token=9ba717c9-d373-4c04-ae77-69e701997f03', 
                 alt: 'imagem banner'}
             ],
         }
