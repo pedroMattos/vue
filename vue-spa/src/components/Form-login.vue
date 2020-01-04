@@ -29,20 +29,24 @@ export default {
             password: '',
         }
     },
-    mounted() {
-        const res = auth
-        console.log(res)
-    },
     methods: {
         async login() {
             // recupera o valor das variaveis
             const { email, password } = this
 
             try {
-                const res = await auth
-                console.log(res)
+                // realiza a autenticação
+                const res = await auth.app.auth().signInWithEmailAndPassword(email, password)
+
+                window.uid = res.user.uid
+
+                if(window.uid) {
+                    this.$router.push({ name: 'userpage' })
+                } else {
+                    this.$router.push({ name: 'login' })
+                }
             } catch(e) {
-                console.log(e)
+                console.warn(e)
             }
         }
     },
