@@ -6,6 +6,7 @@ import Login from '@/components/Login'
 import singleContent from '@/components/singleContent'
 import indexGames from '@/components/indexGames'
 import indexFilms from '@/components/indexFilms'
+import Welcome from '@/components/Loged-user'
 // import VueFire from '@/components/firebaseInit'
 
 
@@ -45,6 +46,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login,
+    },
+    {
+      path: '/perfil',
+      name: 'userpage',
+      component: Welcome,
     }
   ]
 })
