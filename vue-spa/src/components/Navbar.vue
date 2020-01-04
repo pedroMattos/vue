@@ -6,6 +6,7 @@
                 <li><router-link :to="{ name: 'jogos' }">Jogos</router-link></li>
                 <li><router-link :to="{ name: 'filmes' }">Filmes</router-link></li>
                 <li><a>Contatos</a></li>
+                <li><router-link :to="{ name: 'login' }">Login</router-link></li>
             </ul>
         </div>
     </nav >
